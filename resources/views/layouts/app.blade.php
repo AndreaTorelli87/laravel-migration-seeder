@@ -8,13 +8,10 @@
          @vite("resources/js/app.js")
       </head>
       <body>
-         <div class="container mt-5 text-center">
+         <div class="container text-center">
+            @include("partials.header")
             @yield("content")
-   
-         
-         @include("partials.header")
-
-         @include("partials.footer")
+            @include("partials.footer")
          </div>
       </body>
    </html>

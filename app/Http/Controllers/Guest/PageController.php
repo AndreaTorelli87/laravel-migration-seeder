@@ -10,11 +10,8 @@ class PageController extends Controller
 {
     public function index() {
 
-        $trains = Train::all();
-        dd($trains);
-        echo "ciaooooneeee";
-
-        
-        return view("home");
+        // $trains = Train::all();
+        $trains = Train::where("Numero_Carrozze", ">", 10)->get();
+        return view("home",compact("trains"));
     }
 }
