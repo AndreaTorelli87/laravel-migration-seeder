@@ -11,11 +11,11 @@
          <div class="container mt-5 text-center">
             @yield("content")
    
-
+         
          @include("partials.header")
 
          @include("partials.footer")
-</div>
+         </div>
       </body>
    </html>
    

@@ -10,6 +10,7 @@ return new class extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
+
             $table->string("Azienda", 20);
             $table->string("Stazione_di_partenza", 40);
             $table->string("Stazione_di_arrivo", 40);
@@ -19,7 +20,6 @@ return new class extends Migration
             $table->unsignedTinyInteger("Numero_Carrozze");
             $table->boolean("In_orario");
             $table->boolean("Cancellato");
-
 
             $table->timestamps();
         });
